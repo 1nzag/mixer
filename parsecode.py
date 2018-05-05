@@ -9,6 +9,7 @@ class elfinfo:
 		self.elf = ELFFile(open(filename, "rb"))
 		self.section_num = self.elf.header['e_shnum']
 		self.arch = self.elf.elfclass # 32, 64
+		print "[*] loading elf file ...."
 	
 	def user_code_area(self):
 		for nsec, section in enumerate(self.elf.iter_sections()):
