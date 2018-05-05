@@ -40,8 +40,10 @@ class parseasm:
 						inst_string += target[i]
 					
 			inst['inst'] = inst_string
-			print inst
-				
+			self.asm.append(inst)
+	
+	def substitution(self):
+					
 				
 			
 
